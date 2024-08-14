@@ -1,15 +1,18 @@
 # Commerce Services - Technical Interview
 
-### Problem:
+### Context
 
-We are an online book store. We receive book orders from customers and process them.
+We are an online book store. We have an API that returns our catalog and stock. 
+We want to implement two new features in our system:
+- Process new orders
+- Retrieve existing orders
 
-### Features
+### Functional Requirements
 
 - **Create a new Order**:
   - The application receives orders in a JSON format through an HTTP API endpoint (POST).
   - Orders contain a list of books and the quantity.
-  - Before registering the order, the system should check if there's enough stock to fulfill the order (`import.sql` will set the initial stock).
+  - Before registering the order, the system should check if there's enough stock to fulfill the order (`src/main/resources/import.sql` will set the initial stock).
   - If one of the books in the order does not have enough stock we will reject the entire order.
   - After stock validation, the order is marked as a success, and it would return a Unique Order Identifier to the caller of the HTTP API endpoint.
   - If the order was processed we need to update available stock, taking into consideration:
@@ -17,14 +20,15 @@ We are an online book store. We receive book orders from customers and process t
     - If the process of updating stock fails, should not cause an error in order processing.
 
 - **Retrieve Orders**:
-  - The application has an endpoint to extract a list of existing orders. So that we can run "curl localhost:8080/orders/" and get a list of them
+  - The application has an endpoint to extract a list of existing orders. So that we can run `curl localhost:8080/orders/` and get a list of them
 
 ### Required:
 
 - Resolution needs to be fully in English
 - You need to use Java 17
-- You are provided with a scaffold, fork or create a public repository with your solution. Once the code is complete, reply to your hiring person of contact.
+- This repo contains the existing bookstore code; fork or create a public repository with your solution.
 - We expect you to implement tests for the requested functionalities. You decide the scope.
+- **Once the code is complete, reply to your hiring person of contact.**
 
 ### How to run
 
