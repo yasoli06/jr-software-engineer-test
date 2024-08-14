@@ -1,13 +1,5 @@
 # Commerce Services - Technical Interview
 
-## Context:
-
-We would like to evaluate both skills: backend development and ops knowledge.
-We have prepared two independent tests. 
-
-
-## Dev part
-
 ### Problem:
 
 We are an online book store. We receive book orders from customers and process them.
