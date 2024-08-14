@@ -22,7 +22,7 @@ We want to implement two new features in our system:
 - **Retrieve Orders**:
   - The application has an endpoint to extract a list of existing orders. So that we can run `curl localhost:8080/orders/` and get a list of them
 
-### Required:
+### Required
 
 - Resolution needs to be fully in English
 - You need to use Java 17
