@@ -3,6 +3,7 @@ package com.adobe.bookstore.service;
 import com.adobe.bookstore.model.BookStock;
 import com.adobe.bookstore.model.Order;
 import com.adobe.bookstore.model.OrderItem;
+import com.adobe.bookstore.model.OrderStatus;
 import com.adobe.bookstore.repository.BookStockRepository;
 import com.adobe.bookstore.repository.OrderRepository;
 import jakarta.transaction.Transactional;
@@ -26,15 +27,21 @@ public class OrderService {
 
     @Transactional
     public Order processOrder(Order order) {
+        boolean hasInsufficientStock = false;
         for (OrderItem item : order.getItems()) {
             BookStock stock = bookStockRepository.findById(item.getBookId())
                     .orElseThrow(() -> new RuntimeException("Book not found: " + item.getBookId()));
 
             if (stock.getQuantity() < item.getQuantity()) {
-                throw new RuntimeException("Not enough stock for book: " + item.getBookId());
+                hasInsufficientStock = true;
+                break;
             }
         }
-        order.setStatus("SUCCESS");
+        if (hasInsufficientStock) {
+            order.setStatus(OrderStatus.FAILED);
+            return orderRepository.save(order);
+        }
+        order.setStatus(OrderStatus.SUCCESS);
         Order savedOrder = orderRepository.save(order);
         updateStockAsync(order.getItems());
 

@@ -1,4 +1,9 @@
-com\adobe\bookstore\BookStock.class
-com\adobe\bookstore\BookStockResource.class
+com\adobe\bookstore\model\Order.class
+com\adobe\bookstore\repository\BookStockRepository.class
+com\adobe\bookstore\resource\BookStockResource.class
+com\adobe\bookstore\resource\OrderResource.class
+com\adobe\bookstore\model\OrderItem.class
+com\adobe\bookstore\model\BookStock.class
+com\adobe\bookstore\repository\OrderRepository.class
 com\adobe\bookstore\BookstoreApplication.class
-com\adobe\bookstore\BookStockRepository.class
+com\adobe\bookstore\service\OrderService.class

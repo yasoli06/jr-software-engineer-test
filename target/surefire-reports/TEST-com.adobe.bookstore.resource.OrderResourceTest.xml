@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.adobe.bookstore.resource.OrderResourceTest" time="1.025" tests="2" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Yas\Área de Trabalho\Programming\jr-software-engineer-test\target\test-classes;C:\Users\Yas\Área de Trabalho\Programming\jr-software-engineer-test\target\classes;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.13\spring-boot-starter-data-jpa-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.0.13\spring-boot-starter-aop-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-aop\6.0.14\spring-aop-6.0.14.jar;C:\Users\Yas\.m2\repository\org\aspectj\aspectjweaver\1.9.20.1\aspectjweaver-1.9.20.1.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.0.13\spring-boot-starter-jdbc-3.0.13.jar;C:\Users\Yas\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-jdbc\6.0.14\spring-jdbc-6.0.14.jar;C:\Users\Yas\.m2\repository\org\hibernate\orm\hibernate-core\6.1.7.Final\hibernate-core-6.1.7.Final.jar;C:\Users\Yas\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Yas\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Yas\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Yas\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Yas\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\Yas\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Yas\.m2\repository\net\bytebuddy\byte-buddy\1.12.23\byte-buddy-1.12.23.jar;C:\Users\Yas\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\Yas\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\Yas\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\Yas\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\Yas\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Yas\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.0\jakarta.inject-api-2.0.0.jar;C:\Users\Yas\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\Yas\.m2\repository\org\springframework\data\spring-data-jpa\3.0.12\spring-data-jpa-3.0.12.jar;C:\Users\Yas\.m2\repository\org\springframework\data\spring-data-commons\3.0.12\spring-data-commons-3.0.12.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-orm\6.0.14\spring-orm-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-context\6.0.14\spring-context-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-tx\6.0.14\spring-tx-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-beans\6.0.14\spring-beans-6.0.14.jar;C:\Users\Yas\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Yas\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-aspects\6.0.14\spring-aspects-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.0.13\spring-boot-starter-web-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter\3.0.13\spring-boot-starter-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot\3.0.13\spring-boot-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.0.13\spring-boot-autoconfigure-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.0.13\spring-boot-starter-logging-3.0.13.jar;C:\Users\Yas\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\Yas\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\Yas\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.19.0\log4j-to-slf4j-2.19.0.jar;C:\Users\Yas\.m2\repository\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;C:\Users\Yas\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\Yas\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.0.13\spring-boot-starter-json-3.0.13.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.3\jackson-databind-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.3\jackson-annotations-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.3\jackson-core-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.3\jackson-datatype-jdk8-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.14.3\jackson-datatype-jsr310-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.14.3\jackson-module-parameter-names-2.14.3.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.0.13\spring-boot-starter-tomcat-3.0.13.jar;C:\Users\Yas\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.16\tomcat-embed-core-10.1.16.jar;C:\Users\Yas\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.16\tomcat-embed-el-10.1.16.jar;C:\Users\Yas\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.16\tomcat-embed-websocket-10.1.16.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-web\6.0.14\spring-web-6.0.14.jar;C:\Users\Yas\.m2\repository\io\micrometer\micrometer-observation\1.10.13\micrometer-observation-1.10.13.jar;C:\Users\Yas\.m2\repository\io\micrometer\micrometer-commons\1.10.13\micrometer-commons-1.10.13.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-webmvc\6.0.14\spring-webmvc-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-expression\6.0.14\spring-expression-6.0.14.jar;C:\Users\Yas\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.0.13\spring-boot-starter-test-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-test\3.0.13\spring-boot-test-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.0.13\spring-boot-test-autoconfigure-3.0.13.jar;C:\Users\Yas\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\Yas\.m2\repository\net\minidev\json-smart\2.4.11\json-smart-2.4.11.jar;C:\Users\Yas\.m2\repository\net\minidev\accessors-smart\2.4.11\accessors-smart-2.4.11.jar;C:\Users\Yas\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Yas\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\Yas\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Yas\.m2\repository\org\assertj\assertj-core\3.23.1\assertj-core-3.23.1.jar;C:\Users\Yas\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Yas\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\Yas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Yas\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Yas\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Yas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Yas\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Yas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Yas\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Yas\.m2\repository\org\mockito\mockito-core\4.8.1\mockito-core-4.8.1.jar;C:\Users\Yas\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.23\byte-buddy-agent-1.12.23.jar;C:\Users\Yas\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Yas\.m2\repository\org\mockito\mockito-junit-jupiter\4.8.1\mockito-junit-jupiter-4.8.1.jar;C:\Users\Yas\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Yas\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-core\6.0.14\spring-core-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-jcl\6.0.14\spring-jcl-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-test\6.0.14\spring-test-6.0.14.jar;C:\Users\Yas\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\Yas\AppData\Local\Temp\surefire14157024721255079940\surefirebooter1400615877029778222.jar C:\Users\Yas\AppData\Local\Temp\surefire14157024721255079940 2025-02-21T16-12-16_477-jvmRun1 surefire4862041357828980121tmp surefire_06633951806541941909tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Yas\Área de Trabalho\Programming\jr-software-engineer-test\target\test-classes;C:\Users\Yas\Área de Trabalho\Programming\jr-software-engineer-test\target\classes;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.0.13\spring-boot-starter-data-jpa-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.0.13\spring-boot-starter-aop-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-aop\6.0.14\spring-aop-6.0.14.jar;C:\Users\Yas\.m2\repository\org\aspectj\aspectjweaver\1.9.20.1\aspectjweaver-1.9.20.1.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.0.13\spring-boot-starter-jdbc-3.0.13.jar;C:\Users\Yas\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-jdbc\6.0.14\spring-jdbc-6.0.14.jar;C:\Users\Yas\.m2\repository\org\hibernate\orm\hibernate-core\6.1.7.Final\hibernate-core-6.1.7.Final.jar;C:\Users\Yas\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Yas\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Yas\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Yas\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Yas\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\Yas\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Yas\.m2\repository\net\bytebuddy\byte-buddy\1.12.23\byte-buddy-1.12.23.jar;C:\Users\Yas\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.4\jaxb-runtime-4.0.4.jar;C:\Users\Yas\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.4\jaxb-core-4.0.4.jar;C:\Users\Yas\.m2\repository\org\eclipse\angus\angus-activation\2.0.1\angus-activation-2.0.1.jar;C:\Users\Yas\.m2\repository\org\glassfish\jaxb\txw2\4.0.4\txw2-4.0.4.jar;C:\Users\Yas\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Yas\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.0\jakarta.inject-api-2.0.0.jar;C:\Users\Yas\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\Yas\.m2\repository\org\springframework\data\spring-data-jpa\3.0.12\spring-data-jpa-3.0.12.jar;C:\Users\Yas\.m2\repository\org\springframework\data\spring-data-commons\3.0.12\spring-data-commons-3.0.12.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-orm\6.0.14\spring-orm-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-context\6.0.14\spring-context-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-tx\6.0.14\spring-tx-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-beans\6.0.14\spring-beans-6.0.14.jar;C:\Users\Yas\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Yas\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-aspects\6.0.14\spring-aspects-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.0.13\spring-boot-starter-web-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter\3.0.13\spring-boot-starter-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot\3.0.13\spring-boot-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.0.13\spring-boot-autoconfigure-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.0.13\spring-boot-starter-logging-3.0.13.jar;C:\Users\Yas\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\Yas\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\Yas\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.19.0\log4j-to-slf4j-2.19.0.jar;C:\Users\Yas\.m2\repository\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;C:\Users\Yas\.m2\repository\org\slf4j\jul-to-slf4j\2.0.9\jul-to-slf4j-2.0.9.jar;C:\Users\Yas\.m2\repository\org\yaml\snakeyaml\1.33\snakeyaml-1.33.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.0.13\spring-boot-starter-json-3.0.13.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.3\jackson-databind-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.3\jackson-annotations-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.3\jackson-core-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.3\jackson-datatype-jdk8-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.14.3\jackson-datatype-jsr310-2.14.3.jar;C:\Users\Yas\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.14.3\jackson-module-parameter-names-2.14.3.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.0.13\spring-boot-starter-tomcat-3.0.13.jar;C:\Users\Yas\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.16\tomcat-embed-core-10.1.16.jar;C:\Users\Yas\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.16\tomcat-embed-el-10.1.16.jar;C:\Users\Yas\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.16\tomcat-embed-websocket-10.1.16.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-web\6.0.14\spring-web-6.0.14.jar;C:\Users\Yas\.m2\repository\io\micrometer\micrometer-observation\1.10.13\micrometer-observation-1.10.13.jar;C:\Users\Yas\.m2\repository\io\micrometer\micrometer-commons\1.10.13\micrometer-commons-1.10.13.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-webmvc\6.0.14\spring-webmvc-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-expression\6.0.14\spring-expression-6.0.14.jar;C:\Users\Yas\.m2\repository\com\h2database\h2\2.1.214\h2-2.1.214.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.0.13\spring-boot-starter-test-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-test\3.0.13\spring-boot-test-3.0.13.jar;C:\Users\Yas\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.0.13\spring-boot-test-autoconfigure-3.0.13.jar;C:\Users\Yas\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\Yas\.m2\repository\net\minidev\json-smart\2.4.11\json-smart-2.4.11.jar;C:\Users\Yas\.m2\repository\net\minidev\accessors-smart\2.4.11\accessors-smart-2.4.11.jar;C:\Users\Yas\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\Yas\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.1\jakarta.xml.bind-api-4.0.1.jar;C:\Users\Yas\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.2\jakarta.activation-api-2.1.2.jar;C:\Users\Yas\.m2\repository\org\assertj\assertj-core\3.23.1\assertj-core-3.23.1.jar;C:\Users\Yas\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Yas\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\Yas\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Yas\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Yas\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Yas\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Yas\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Yas\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Yas\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Yas\.m2\repository\org\mockito\mockito-core\4.8.1\mockito-core-4.8.1.jar;C:\Users\Yas\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.23\byte-buddy-agent-1.12.23.jar;C:\Users\Yas\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Yas\.m2\repository\org\mockito\mockito-junit-jupiter\4.8.1\mockito-junit-jupiter-4.8.1.jar;C:\Users\Yas\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Yas\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-core\6.0.14\spring-core-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-jcl\6.0.14\spring-jcl-6.0.14.jar;C:\Users\Yas\.m2\repository\org\springframework\spring-test\6.0.14\spring-test-6.0.14.jar;C:\Users\Yas\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Yas"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Yas\Área de Trabalho\Programming\jr-software-engineer-test"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Yas\AppData\Local\Temp\surefire14157024721255079940\surefirebooter1400615877029778222.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+7-LTS-207"/>
+    <property name="user.name" value="Yas"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Yas\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Yas\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="C:\Users\Yas\Área de Trabalho\Programming\jr-software-engineer-test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\AutoFirma\AutoFirma;&quot;C:\MinGW\bin;&quot;;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\GitHub CLI\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Yas\Downloads\apache-maven-3.9.9\bin;C:\Users\Yas\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Yas\AppData\Local\Programs\Python\Python312\;C:\Users\Yas\AppData\Local\Programs\Python\Launcher\;C:\Users\Yas\AppData\Local\Microsoft\WindowsApps;;C:\Users\Yas\AppData\Local\Microsoft\WindowsApps;C:\Users\Yas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Yas\AppData\Roaming\npm;C:\Program Files (x86)\MongoDB Atlas CLI\;C:\Users\Yas\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.11+7-LTS-207"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testCreateOrder" classname="com.adobe.bookstore.resource.OrderResourceTest" time="0.1">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;400&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<400>
+	at com.adobe.bookstore.resource.OrderResourceTest.testCreateOrder(OrderResourceTest.java:40)
+]]></failure>
+    <system-out><![CDATA[2025-02-21T16:12:26.203+01:00  INFO 19208 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.adobe.bookstore.resource.OrderResourceTest]: OrderResourceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-02-21T16:12:26.251+01:00  INFO 19208 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.adobe.bookstore.BookstoreApplication for test class com.adobe.bookstore.resource.OrderResourceTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v3.0.13)
+
+2025-02-21T16:12:26.293+01:00  INFO 19208 --- [           main] c.a.b.resource.OrderResourceTest         : Starting OrderResourceTest using Java 17.0.11 with PID 19208 (started by Yas in C:\Users\Yas\Área de Trabalho\Programming\jr-software-engineer-test)
+2025-02-21T16:12:26.293+01:00  INFO 19208 --- [           main] c.a.b.resource.OrderResourceTest         : No active profile set, falling back to 1 default profile: "default"
+2025-02-21T16:12:26.472+01:00  INFO 19208 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-21T16:12:26.486+01:00  INFO 19208 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaceinterfaces.
+2025-02-21T16:12:26.611+01:00  INFO 19208 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-21T16:12:26.620+01:00  INFO 19208 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-02-21T16:12:26.627+01:00  INFO 19208 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:1926a6aa-dd35-4911-a269-f4f089fc20db user=SA
+2025-02-21T16:12:26.627+01:00  INFO 19208 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-02-21T16:12:26.630+01:00  INFO 19208 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table if exists book_stock cascade 
+Hibernate: drop table if exists order_items cascade 
+Hibernate: drop table if exists orders cascade 
+Hibernate: create table book_stock (id varchar(255) not null, name varchar(255) not null, quantity integer not null, primary key (id))
+Hibernate: create table order_items (id bigint generated by default as identity, book_id varchar(255) not null, quantity integer not null, order_id varchar(255), primary key (id))
+Hibernate: create table orders (id varchar(255) not null, order_date timestamp(6), status varchar(255) not null, primary key (id))
+Hibernate: alter table if exists order_items add constraint FKbioxgbv59vetrxe0ejfubep1w foreign key (order_id) references orders
+2025-02-21T16:12:26.708+01:00  INFO 19208 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/Yas/%C3%81rea%20de%20Trabalho/Programming/jr-software-engineer-test/target/classes/import.sql'
+Hibernate: INSERT INTO book_stock VALUES ('ae1666d6-6100-4ef0-9037-b45dd0d5bb0e', 'adipisicing culpa Lorem laboris adipisicing', 0)
+Hibernate: INSERT INTO book_stock VALUES ('22d580fc-d02e-4f70-9980-f9693c18f6e0', 'dolore aliqua sint ipsum laboris', 5)
+Hibernate: INSERT INTO book_stock VALUES ('d02b58ae-8731-451c-9acb-1941adf88501', 'ullamco do voluptate cillum amet', 4)
+Hibernate: INSERT INTO book_stock VALUES ('8d80c009-b3be-4d9d-95ba-cec1e7a2d52b', 'Lorem sint adipisicing consectetur anim', 1)
+Hibernate: INSERT INTO book_stock VALUES ('12494472-c905-4ac0-a133-5ebb3b4751e4', 'excepteur eiusmod cupidatat in amet', 0)
+Hibernate: INSERT INTO book_stock VALUES ('302bbd26-2d64-40f1-9f53-dd3a6e858e05', 'do esse amet dolor Lorem', 0)
+Hibernate: INSERT INTO book_stock VALUES ('b6e8c865-2221-4435-9a65-d30ca0a63701', 'ad laborum pariatur consequat commodo', 5)
+Hibernate: INSERT INTO book_stock VALUES ('7bcffbdf-2fcc-4a63-9a16-e9439575a473', 'Lorem do reprehenderit aliqua esse', 1)
+Hibernate: INSERT INTO book_stock VALUES ('172d3d74-99c4-43cd-a7c3-d6df4017402d', 'in aliqua est duis excepteur', 1)
+Hibernate: INSERT INTO book_stock VALUES ('58716995-b335-4bb0-89c1-3503bc003118', 'nulla qui proident consectetur occaecat', 5)
+Hibernate: INSERT INTO book_stock VALUES ('e415e3af-e87e-47e6-9bf2-f08c72e2f281', 'Lorem esse nostrud irure tempor', 4)
+Hibernate: INSERT INTO book_stock VALUES ('a5242079-0f51-4fd5-9066-bde39f569587', 'nisi ex est elit magna', 3)
+Hibernate: INSERT INTO book_stock VALUES ('a1aa23bc-cee9-449e-afde-7c64a32f04f1', 'labore occaecat consequat incididunt officia', 1)
+Hibernate: INSERT INTO book_stock VALUES ('eff2f24e-9ca2-4b8d-a5ae-3aba16c219f5', 'non ea consequat veniam fugiat', 3)
+Hibernate: INSERT INTO book_stock VALUES ('623d6650-5d98-457d-aacc-deba222f5cde', 'occaecat laborum officia ad ipsum', 5)
+Hibernate: INSERT INTO book_stock VALUES ('93136a2b-9e9d-4fb4-957b-19444a4ae293', 'non labore commodo culpa commodo', 4)
+Hibernate: INSERT INTO book_stock VALUES ('863b8f96-c254-473b-973f-87c63bb3ca42', 'veniam ut consectetur non ipsum', 4)
+Hibernate: INSERT INTO book_stock VALUES ('05d9a752-ddc3-4336-a82d-325ae561960b', 'do nostrud proident sunt proident', 0)
+Hibernate: INSERT INTO book_stock VALUES ('9ae5ff9e-4e2c-489c-b5bd-c3b2fe70dbde', 'est ut voluptate laboris cupidatat', 4)
+Hibernate: INSERT INTO book_stock VALUES ('ec60435b-ffcf-4ac3-97a4-f5f9113601b0', 'qui commodo tempor aliqua incididunt', 1)
+Hibernate: INSERT INTO book_stock VALUES ('577ece52-b66c-44f2-baeb-47c35cd05afc', 'aliquip et ad quis fugiat', 5)
+Hibernate: INSERT INTO book_stock VALUES ('9f55ac40-fd1a-438a-988b-5b06c4feb93d', 'ullamco qui aute excepteur id', 3)
+Hibernate: INSERT INTO book_stock VALUES ('d0cb049e-8c91-4303-91cb-98072482f689', 'Lorem excepteur commodo incididunt sint', 4)
+Hibernate: INSERT INTO book_stock VALUES ('f540de5c-6e18-444a-b135-605e2303f352', 'voluptate laborum elit dolor ex', 0)
+Hibernate: INSERT INTO book_stock VALUES ('58ea0a10-81a5-4ec6-b5dc-8067ab9db18b', 'sit est adipisicing esse amet', 0)
+Hibernate: INSERT INTO book_stock VALUES ('d81cc891-8cee-4412-a271-264f57cba326', 'cupidatat magna occaecat dolore magna', 1)
+Hibernate: INSERT INTO book_stock VALUES ('8dcb1109-7e38-49d4-ba3f-5caa9e6f83ce', 'aliqua enim enim exercitation veniam', 0)
+Hibernate: INSERT INTO book_stock VALUES ('ab36bcb5-9fb6-4ea4-86b0-068eaaf34fd5', 'ipsum proident adipisicing aute pariatur', 5)
+Hibernate: INSERT INTO book_stock VALUES ('593ebe81-19f2-46fc-b340-aa76d8a9f987', 'adipisicing excepteur esse adipisicing quis', 3)
+Hibernate: INSERT INTO book_stock VALUES ('22627251-75ea-441f-b58d-09d8b470f661', 'in et cillum sint cupidatat', 4)
+Hibernate: INSERT INTO book_stock VALUES ('79658a46-3089-4ebc-8d02-4a24d01de66c', 'laboris cillum excepteur do nisi', 0)
+Hibernate: INSERT INTO book_stock VALUES ('a1ff3cf9-3c42-4364-bd12-f0e9632d3bb6', 'irure commodo ad minim amet', 4)
+Hibernate: INSERT INTO book_stock VALUES ('2b998229-b44a-468f-bd49-e5b4cb4c6ec2', 'irure sit adipisicing nisi est', 0)
+Hibernate: INSERT INTO book_stock VALUES ('eb0ad1e1-9ca4-4a98-aae7-b534829f445c', 'sit officia tempor laborum aliquip', 5)
+Hibernate: INSERT INTO book_stock VALUES ('b0fad70f-0c21-4c11-9c11-15053967da55', 'culpa reprehenderit eu reprehenderit dolor', 0)
+Hibernate: INSERT INTO book_stock VALUES ('6ad79328-7849-45a5-a67e-98757fcf1d6d', 'deserunt veniam sint cillum laborum', 0)
+Hibernate: INSERT INTO book_stock VALUES ('f46b0701-a20d-4f08-8444-66e4b22884a0', 'aliqua duis labore deserunt reprehenderit', 1)
+Hibernate: INSERT INTO book_stock VALUES ('3546e7c7-498b-43c0-bf9e-4ab95e2d44fb', 'commodo amet nisi cillum id', 1)
+Hibernate: INSERT INTO book_stock VALUES ('63a0b8ad-8d90-459c-9106-1e161ef668ab', 'nostrud nisi est velit cupidatat', 5)
+Hibernate: INSERT INTO book_stock VALUES ('5de03ba5-b2f1-45ce-98ff-42586cc344ec', 'mollit labore esse culpa excepteur', 0)
+Hibernate: INSERT INTO book_stock VALUES ('3f3087bc-a9e2-47a2-9a33-98ea003aaf3d', 'tempor occaecat qui ullamco nisi', 3)
+Hibernate: INSERT INTO book_stock VALUES ('776cedd2-a707-439b-8d58-01b1d488e2c0', 'dolor nisi fugiat dolore dolore', 4)
+Hibernate: INSERT INTO book_stock VALUES ('20e3b5e2-10ec-4ec1-97cb-9e4c692fc196', 'ad eu duis nisi ullamco', 5)
+Hibernate: INSERT INTO book_stock VALUES ('67bbfb06-d174-4a6b-85c1-3a67784801eb', 'sunt veniam reprehenderit quis nisi', 5)
+Hibernate: INSERT INTO book_stock VALUES ('78ca7e05-e9a0-4118-ad76-20a234d3f6b9', 'ex dolor voluptate velit aute', 3)
+Hibernate: INSERT INTO book_stock VALUES ('9755d862-6ad3-408f-b785-2d28e4717bbd', 'consequat esse Lorem sint elit', 0)
+Hibernate: INSERT INTO book_stock VALUES ('93adf3be-831f-4fb2-9599-2067494fb3d3', 'cillum labore nostrud ipsum Lorem', 0)
+Hibernate: INSERT INTO book_stock VALUES ('e8760db9-da11-410c-810d-53cbaf86fd0a', 'duis minim exercitation cupidatat eiusmod', 0)
+Hibernate: INSERT INTO book_stock VALUES ('7eee4c87-4557-434b-8ecf-73ca10f1a367', 'ea laboris elit mollit labore', 5)
+Hibernate: INSERT INTO book_stock VALUES ('44713759-12d6-4679-9c0d-4ddd47679e35', 'incididunt enim officia anim commodo', 5)
+Hibernate: INSERT INTO book_stock VALUES ('e0a06cda-55e5-4c92-897f-159d3b0696f4', 'excepteur incididunt enim adipisicing ad', 2)
+Hibernate: INSERT INTO book_stock VALUES ('2ab76066-167c-407b-be84-89825812e5ed', 'culpa nulla officia sunt ea', 2)
+Hibernate: INSERT INTO book_stock VALUES ('2bcef893-ca8c-4cdc-9f78-f66c58062837', 'id et pariatur ea exercitation', 0)
+Hibernate: INSERT INTO book_stock VALUES ('b3061912-eb57-4321-8fee-13f4aaf636af', 'ad dolor fugiat exercitation eu', 4)
+Hibernate: INSERT INTO book_stock VALUES ('18192373-7811-48d0-9ec9-850c584954d1', 'ullamco aliqua aute deserunt Lorem', 4)
+Hibernate: INSERT INTO book_stock VALUES ('e6eab887-14ee-47f3-9f9e-3f88ae9646eb', 'sunt duis ex quis qui', 0)
+Hibernate: INSERT INTO book_stock VALUES ('50a01f5a-8d6f-4adc-abfb-fd280358abf9', 'sint magna eu ipsum non', 1)
+Hibernate: INSERT INTO book_stock VALUES ('39fbb5f1-0066-426f-8d13-fd712e12f429', 'incididunt et qui culpa sit', 5)
+Hibernate: INSERT INTO book_stock VALUES ('04267f5e-9e0e-407f-9917-57655eb426db', 'adipisicing exercitation amet sit sint', 2)
+Hibernate: INSERT INTO book_stock VALUES ('60a3cfa7-4352-48dd-9352-571c6e634673', 'velit qui id reprehenderit incididunt', 1)
+Hibernate: INSERT INTO book_stock VALUES ('80d9f5e3-e959-4365-b75f-7ca90e90057f', 'ex officia nostrud enim incididunt', 5)
+Hibernate: INSERT INTO book_stock VALUES ('b264b5c1-96d4-4b96-967a-214858c996ea', 'consectetur ut ullamco eiusmod ut', 1)
+Hibernate: INSERT INTO book_stock VALUES ('6f5e37cb-924e-40b6-aeac-436cccefb413', 'commodo minim laborum voluptate aute', 2)
+Hibernate: INSERT INTO book_stock VALUES ('4b5f6f06-fcf8-4c75-98ce-98202ab3082a', 'dolore adipisicing duis reprehenderit id', 4)
+Hibernate: INSERT INTO book_stock VALUES ('6fcf1723-e8a4-4e4a-b84b-f29d1f7393e6', 'esse ad aliqua ipsum excepteur', 5)
+Hibernate: INSERT INTO book_stock VALUES ('55dd2a56-317d-437c-a46d-65f1e414edaf', 'mollit labore sit magna esse', 4)
+Hibernate: INSERT INTO book_stock VALUES ('f42061be-8148-4014-a5e0-7b5a751386b0', 'reprehenderit amet elit veniam tempor', 0)
+Hibernate: INSERT INTO book_stock VALUES ('e25ef467-7efc-40b4-9e6e-65a5c23be6d9', 'aliquip adipisicing irure dolore tempor', 2)
+Hibernate: INSERT INTO book_stock VALUES ('c47ff8ac-ffd4-4e47-abf0-e55edc1dc489', 'excepteur duis ea culpa in', 0)
+Hibernate: INSERT INTO book_stock VALUES ('fedb4d23-2008-4200-b38a-e38813a4d673', 'elit ut ullamco commodo minim', 5)
+Hibernate: INSERT INTO book_stock VALUES ('3b13588c-1cad-41c7-bd82-2ae48ee2eb95', 'adipisicing sit sit eu laborum', 1)
+Hibernate: INSERT INTO book_stock VALUES ('7ecc8de0-7c3b-4c51-b106-441400c08df3', 'deserunt nostrud non quis deserunt', 0)
+Hibernate: INSERT INTO book_stock VALUES ('37a65ea3-72e0-4e7d-8862-e79008ed6060', 'reprehenderit sint dolor in sunt', 3)
+Hibernate: INSERT INTO book_stock VALUES ('4effd8c9-fe56-4397-9daa-9e08cd10b4ce', 'est adipisicing dolore id veniam', 2)
+Hibernate: INSERT INTO book_stock VALUES ('8e90cd18-2f3c-450e-846f-c635f7ce7aed', 'sunt dolor aliquip do do', 4)
+Hibernate: INSERT INTO book_stock VALUES ('d8774843-e203-4464-8677-701e859190e1', 'excepteur Lorem sint reprehenderit ea', 1)
+Hibernate: INSERT INTO book_stock VALUES ('14e05a52-eec7-4ff4-af1b-d6fd1cb90207', 'irure aute aliquip occaecat anim', 3)
+Hibernate: INSERT INTO book_stock VALUES ('f09387f4-0ec5-4ff4-bc64-3b4bf6108aa1', 'enim in commodo consectetur non', 4)
+Hibernate: INSERT INTO book_stock VALUES ('92259b63-2440-4782-9855-25d359d75590', 'do laboris Lorem irure mollit', 1)
+Hibernate: INSERT INTO book_stock VALUES ('7916a830-0e9b-4aab-8982-f55d76c6a156', 'et eu magna id excepteur', 4)
+2025-02-21T16:12:26.857+01:00  INFO 19208 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-21T16:12:26.859+01:00  INFO 19208 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-21T16:12:26.969+01:00  WARN 19208 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-21T16:12:27.109+01:00  INFO 19208 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-21T16:12:27.109+01:00  INFO 19208 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-21T16:12:27.109+01:00  INFO 19208 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-21T16:12:27.119+01:00  INFO 19208 --- [           main] c.a.b.resource.OrderResourceTest         : Started OrderResourceTest in 0.861 seconds (process running for 10.221)
+Hibernate: select b1_0.id,b1_0.name,b1_0.quantity from book_stock b1_0 where b1_0.id=?
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /orders
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"158"]
+             Body = {"id":"1d4e8f49-bf4f-4d0f-8c81-44734f8d7501","orderDate":"2025-02-21T16:12:27.1298084","status":"PENDING","items":[{"id":null,"bookId":"book1","quantity":1}]}
+    Session Attrs = {}
+
+Handler:
+             Type = com.adobe.bookstore.resource.OrderResource
+           Method = com.adobe.bookstore.resource.OrderResource#createOrder(Order)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"21"]
+     Content type = text/plain;charset=UTF-8
+             Body = Book not found: book1
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+  <testcase name="testGetOrders" classname="com.adobe.bookstore.resource.OrderResourceTest" time="0.017">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;400&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<400>
+	at com.adobe.bookstore.resource.OrderResourceTest.testGetOrders(OrderResourceTest.java:56)
+]]></failure>
+    <system-out><![CDATA[Hibernate: select b1_0.id,b1_0.name,b1_0.quantity from book_stock b1_0 where b1_0.id=?
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /orders
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"156"]
+             Body = {"id":"ea714014-590c-4880-a49d-ba1a28154373","orderDate":"2025-02-21T16:12:27.20315","status":"PENDING","items":[{"id":null,"bookId":"book1","quantity":1}]}
+    Session Attrs = {}
+
+Handler:
+             Type = com.adobe.bookstore.resource.OrderResource
+           Method = com.adobe.bookstore.resource.OrderResource#createOrder(Order)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"21"]
+     Content type = text/plain;charset=UTF-8
+             Body = Book not found: book1
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
+</testsuite>

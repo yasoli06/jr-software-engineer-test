@@ -11,26 +11,30 @@ import java.util.List;
 @RestController
 @RequestMapping("/orders")
 public class OrderResource {
-
-    private final OrderService orderService;
-
     @Autowired
+    private OrderService orderService;
+
     public OrderResource(OrderService orderService){
         this.orderService = orderService;
     }
 
     @PostMapping
-    public ResponseEntity<String> createOrder(@RequestBody Order order){
+    public ResponseEntity<String> createOrder(@RequestBody Order order) {
         try {
             Order savedOrder = orderService.processOrder(order);
             return ResponseEntity.ok(savedOrder.getId());
-        } catch (Exception e){
+        } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
+
     @GetMapping
     public ResponseEntity<List<Order>> getOrders() {
-        List<Order> orders = orderService.getAllOrders();
-        return ResponseEntity.ok(orders);
+        return ResponseEntity.ok(orderService.getAllOrders());
+    }
+
+    @GetMapping("/test")
+    public String test() {
+        return "Order resource working";
     }
 }

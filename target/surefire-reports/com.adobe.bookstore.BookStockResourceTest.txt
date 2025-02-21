@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.adobe.bookstore.BookStockResourceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.145 s - in com.adobe.bookstore.BookStockResourceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.841 s - in com.adobe.bookstore.BookStockResourceTest

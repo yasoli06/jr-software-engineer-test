@@ -1,11 +1,13 @@
 package com.adobe.bookstore.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
+@JsonIgnoreProperties(value = {"id", "orderDate", "status"}, allowGetters = true)
 @Entity
 @Table(name ="orders")
 public class Order {
@@ -17,7 +19,8 @@ public class Order {
     private LocalDateTime orderDate;
 
     @Column(name = "status", nullable = false)
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private OrderStatus status;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")
@@ -26,6 +29,7 @@ public class Order {
     public Order(){
         this.id = UUID.randomUUID().toString();
         this.orderDate = LocalDateTime.now();
+        this.status = OrderStatus.PENDING;
     }
 
     public String getId() {
@@ -36,11 +40,11 @@ public class Order {
         return orderDate;
     }
 
-    public String getStatus() {
+    public OrderStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(OrderStatus status) {
         this.status = status;
     }
 
@@ -51,4 +55,5 @@ public class Order {
     public void setItems(List<OrderItem> items) {
         this.items = items;
     }
+
 }
