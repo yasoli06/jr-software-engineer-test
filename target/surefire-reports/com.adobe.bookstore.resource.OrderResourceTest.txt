@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.adobe.bookstore.resource.OrderResourceTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.025 s <<< FAILURE! - in com.adobe.bookstore.resource.OrderResourceTest
-testCreateOrder  Time elapsed: 0.1 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<400>
-	at com.adobe.bookstore.resource.OrderResourceTest.testCreateOrder(OrderResourceTest.java:40)
-
-testGetOrders  Time elapsed: 0.017 s  <<< FAILURE!
-java.lang.AssertionError: Status expected:<200> but was:<400>
-	at com.adobe.bookstore.resource.OrderResourceTest.testGetOrders(OrderResourceTest.java:56)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.378 s - in com.adobe.bookstore.resource.OrderResourceTest

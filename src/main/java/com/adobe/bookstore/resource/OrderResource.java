@@ -32,9 +32,4 @@ public class OrderResource {
     public ResponseEntity<List<Order>> getOrders() {
         return ResponseEntity.ok(orderService.getAllOrders());
     }
-
-    @GetMapping("/test")
-    public String test() {
-        return "Order resource working";
-    }
 }
