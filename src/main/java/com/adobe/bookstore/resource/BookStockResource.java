@@ -1,5 +1,7 @@
-package com.adobe.bookstore;
+package com.adobe.bookstore.resource;
 
+import com.adobe.bookstore.model.BookStock;
+import com.adobe.bookstore.repository.BookStockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
