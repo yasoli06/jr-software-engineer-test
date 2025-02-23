@@ -39,7 +39,7 @@ public class OrderServiceTest {
 
         BookStock stock = new BookStock();
         stock.setId("book1");
-        stock.setName("Libro de ejemplo");
+        stock.setName("Sample Book");
         stock.setQuantity(10);
 
         when(bookStockRepository.findById("book1")).thenReturn(Optional.of(stock));

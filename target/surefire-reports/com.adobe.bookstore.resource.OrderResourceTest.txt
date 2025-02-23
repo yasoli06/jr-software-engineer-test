@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.adobe.bookstore.resource.OrderResourceTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.378 s - in com.adobe.bookstore.resource.OrderResourceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.795 s - in com.adobe.bookstore.resource.OrderResourceTest
